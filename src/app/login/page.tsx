@@ -1,7 +1,7 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useForm } from "react-hook-form";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useForm } from 'react-hook-form';
 
 type FormValues = {
   email: string;
@@ -43,7 +43,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="email"
-                {...register("email")}
+                {...register('email')}
                 placeholder="Email"
                 className="input input-bordered"
                 required
@@ -55,9 +55,9 @@ const LoginPage = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                {...register("password")}
+                {...register('password')}
                 type="password"
-                placeholder="Email"
+                placeholder="Password"
                 className="input input-bordered"
                 required
               />
@@ -69,7 +69,7 @@ const LoginPage = () => {
               </button>
             </div>
             <p className="text-center">
-              Don&apos;t have an account?{" "}
+              Don&apos;t have an account?{' '}
               <Link className="text-accent" href="/register">
                 Create an account
               </Link>
